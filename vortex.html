@@ -43,52 +43,63 @@
     <!-- xxxxx -->
   </div>
   <!-- Node Sec -->
-  <div class="nodesec">
-    <div class="nsect">
+  <div class="anomvortex">
+    <div class="avsect">
       <svg width="10%" height="10%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg>
-      <h5 class="nstatus">NODE RUNNING</h5>
+      <h5 class="avstatus">ANOMALY VORTEX NODES</h5>
     </div>
   </div>
+  <!-- Subscription -->
+  <div class="subscription">
+    <h5 class="title">SUBSCRIPTION</h5>
+    <div class="subdetail">
+      <div class="subleft">
+        <div>
+          <h5 class="title"># of Nodes</h5>
+        </div>
+        <div>
+          <output class="portfolio-points" type="text">11</output>
+        </div>
+      </div>
+      <div class="submid">
+        <div>
+          <h5 class="title">Sub ID</h5>
+        </div>
+        <div>
+          <output class="portfolio-points" type="text">78465ae-894...</output>
+        </div>
+      </div>
+      <div class="subright">
+        <div>
+          <h5 class="title">Expire In</h5>
+        </div>
+        <div>
+          <output class="portfolio-points" type="text">28d</output>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subbutt">
+    <div class="gbutton"><a href="#"><p class="buttontxt">BUY</p></a></div>
+    <div class="gbutton"><a href="#"><p class="buttontxt">CANCEL</p></a></div>
+    <div class="gbutton"><a href="#"><p class="buttontxt">EXTEND</p></a></div>
+  </div>
   <!-- Header -->
-  <h4 id="portfolioHeader">YOUR PORTFOLIO</h4>
-  <!-- portfolio -->
-  <div class="portfolio">
+  <h4 id="portfolioHeader">Node Keys</h4>
+  <!-- Node keys-->
+  <div class="nkeycontain">
     <script>
       const header = document.getElementById('portfolioHeader');
-      const portfolio = document.querySelector('.portfolio');
+      const portfolio = document.querySelector('.nkeycontain');
     
       header.addEventListener('click', function() {
         portfolio.classList.toggle('expand');
         header.classList.toggle('expand');
       });
     </script>
-    <div class="portfolio-sec">
-      <div class="psect"><svg width="6%" height="6%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg><h5 class="title">ANOMALY POINTS</h5></div>
-      <output class="portfolio-points" type="text">Points</output>
-      <div class="psc">
-        <div class="button"><a href="#"><p class="buttontxt">REFERRALS</p></a></div>
-        <div class="button"><a href="#"><p class="buttontxt">SOCIALS</p></a></div>
-      </div>
-    </div>
-    <div class="portfolio-sec">
-      <div class="psect"><svg width="6%" height="6%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg><h5 class="title">ANOMALY TOKENS</h5></div>
-      <output class="portfolio-tokens" type="text">Tokens</output>
-      <div class="psc">
-        <div class="gbutton"><a href="#"><p class="buttontxt">STAKE</p></a></div>
-        <div class="gbutton"><a href="#"><p class="buttontxt">BRIDGE</p></a></div>
-      </div>
-    </div>
-  </div>
-  <!-- header2 -->
-  <h4>WALLET</h4>
-  <!-- wallet -->
-  <div class="wallet">
-    <div class="wallet-sec">
-      <div class="wsect"><svg width="6%" height="6%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg><h5 class="title">ARBITRUM WALLET</h5></div>
-      <output class="walletstat" type="text">DISCONNECTED</output>
-      <div class="wsc">
-        <div class="wbutt"><a href="#"><p class="buttontxt">CONNECT</p></a></div>
-      </div>
+    <div class="nkey-sec">
+      <div class="nkeys"><svg width="6%" height="6%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg><h5 class="ptitle">ANOMALY KEY 123</h5></div>
+      <div class="nkeys"><svg width="6%" height="6%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg><h5 class="ptitle">ANOMALY KEY 124</h5></div>
     </div>
   </div>
   <!-- bottom menu -->
