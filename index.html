@@ -8,8 +8,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<div class="lscontain">
+  <div class="loading"><svg width="80%" height="80%" viewBox="0 0 95 107" fill="#05D371" xmlns="http://www.w3.org/2000/svg" style="padding: 0;"><path d="M76.108 53.6061L76.1714 54.8577H77.4247H91.0769L93.6132 104.955H65.8521L65.542 98.6762L65.4802 97.4229H64.2253H34.1202H33.2962L32.9351 98.1637L29.6621 104.879H2.18455L26.777 54.1141L27.694 52.2211H25.5905H12.7876L37.0212 2.12618H73.5016L76.108 53.6061ZM47.4656 68.0332L46.5534 69.9243H48.653H62.6683H64.053L63.985 68.5412L63.2438 53.4746L63.1822 52.2211H61.9271H55.9208H55.0931L54.7334 52.9666L47.4656 68.0332Z" stroke="#05D371" stroke-width="2.63664"/></svg></div>
+  <h5 class="loadingtitle">LOADING...</h5>
+</div>
 <!-- body -->
 <body>
+<div class="content">
   <!-- top menu -->
   <div class="top-menu">
   <!-- xxxxx -->
@@ -191,5 +196,22 @@
       </a>
     </div>
   </div>
+</div>
+<script>
+  // Select elements using querySelector
+  const lscontain = document.querySelector('.lscontain');
+  const content = document.querySelector('.content');
+
+  function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  window.onload = function() {
+      sleep(2500).then(() => {
+          lscontain.classList.add('loaded');
+          content.classList.add('loaded');
+      });
+  };
+</script>
 </body>
 </html>
