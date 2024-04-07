@@ -6,9 +6,11 @@
   --transition:0.3s ease
 }
 @keyframes pulseSpin {
-  0%, 100% { transform: scale(1) rotate(0deg) translateX(4px);; }
-  25% { transform: scale(1.1) rotate(10deg) translateX(-8px); }
-  75% { transform: scale(1.1) rotate(-10deg) translateX(-2px); }
+  0% { transform: scale(1) rotateY(0deg) translateX(0); }
+  25% { transform: scale(1.1) rotateY(90deg) translateX(-4px); }
+  50% { transform: scale(1) rotateY(180deg) translateX(0); }
+  75% { transform: scale(1.1) rotateY(270deg) translateX(4px); }
+  100% { transform: scale(1) rotateY(360deg) translateX(0); }
 }
 .loading {
   animation: pulseSpin 1s linear infinite;
@@ -226,7 +228,7 @@ a:hover {
   float: right;
   margin-left: 5px;
 }
-.active:after {
+.aitem.active:after {
   content: "\2796";
 }
 .aitem {
