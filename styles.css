@@ -5,18 +5,10 @@
   --gy:#D9D9D9;
   --transition:0.3s ease
 }
-@keyframes pulseSpin {
-  0% { transform: rotateY(0deg) translateX(0); }
-  25% { transform: rotateY(90deg) translateX(-4px); }
-  50% { transform: rotateY(180deg) translateX(0); }
-  75% { transform: rotateY(270deg) translateX(4px); }
-  100% { transform: rotateY(360deg) translateX(0); }
-}
-.loading {
-  animation: pulseSpin 2.5s linear infinite;
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+.loading img{
+  padding-top: 50%;
+  width: 100%;
+  height: auto;
 }
 .loadingtitle {
   padding: 0;
